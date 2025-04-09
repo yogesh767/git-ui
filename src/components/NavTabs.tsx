@@ -9,13 +9,13 @@ const NavTabs = () => {
     { name: "Pull requests", icon: "assets/pull.svg" },
     { name: "Discussions", icon: "assets/disscussions.svg" },
     { name: "Actions", icon: "assets/actions.svg" },
-    { name: "Security", icon: "assets/Security.svg" },
-    { name: "Insights", icon: "assets/Insights.svg" },
+    { name: "Security", icon: "assets/security.svg" },
+    { name: "Insights", icon: "assets/insights.svg" },
   ];
 
   return (
     <nav className="border-b border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950">
-      <ul className="flex space-x-6 max-w-7xl px-3">
+      <ul className="flex space-x-6 max-w-7xl">
         {tabs.map((tab, i) => (
           <li
             key={i}
@@ -26,12 +26,12 @@ const NavTabs = () => {
             }
           >
             <button
-              className="text-sm flex items-center gap-2 hover:bg-gray-200  rounded  py-1 px-1.5 "
+              className="text-sm flex items-center gap-2 hover:bg-gray-200  rounded "
               onClick={() => setSelected(tab.name)}
             >
               <img src={tab.icon} alt={tab.name} />
               {tab.name}
-              <span className="bg-gray-200 text-xs rounded-full px-2 py-0.5">
+              <span className="bg-gray-200 text-xs rounded-full px-1">
                 42
               </span>
             </button>
