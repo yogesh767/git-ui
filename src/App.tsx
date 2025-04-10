@@ -4,6 +4,10 @@ import NavTabs from "./components/NavTabs";
 import Timeline from "./components/Timeline";
 import FilterComponent from "./components/FilterComponent";
 import PullRequests from "./components/PullRequests";
+import PaginantionComp from "./components/Pagination";
+import Footer from "./components/Footer";
+import Tip from "./components/Tip";
+
 
 export default function App() {
   return (
@@ -13,6 +17,9 @@ export default function App() {
       <Timeline />
       <FilterComponent/>
       <PullRequests/>
+      <PaginantionComp/>
+      <Tip/>
+      <Footer/>
     </div>
   );
 }
